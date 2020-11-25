@@ -10,13 +10,14 @@ public class Main {
         boss.setDamage(50);
         boss.setHealth(1000);
 
-        Weapon  weapon= new Weapon("W name","W name");
+        Weapon  weapon= new Weapon("Special","club ");
         boss.setBossWeapon(weapon);
 
         System.out.println(boss.getName());
-        System.out.println(boss.getHealth());
-        System.out.println(boss.getDamage());
-        System.out.println(boss.getBossWeapon());
+        System.out.println("Heath: "+boss.getHealth());
+        System.out.println("Damage: "+boss.getDamage());
+        System.out.println("Weapon name: "+boss.getBossWeapon().getWeaponName()+" Weapon type: "+boss.getBossWeapon().getWeaponType());
+
 
 
     }
